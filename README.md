@@ -64,10 +64,11 @@ csat-builder/
 ├── .gitignore
 ├── eslint.config.js
 ├── index.html
-├── package.json
 ├── package-lock.json
+├── package.json
 ├── README.md              # Project Documentation
-└── vite.config.js         # Vite & Tailwind Configuration
+├── tailwind.config.js     # Tailwind Configuration
+└── vite.config.js         # Vite Configuration
 ```
 
 ---
