@@ -1,16 +1,82 @@
-# React + Vite
+# 🚀 Simplified CSAT Campaign Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive **Customer Satisfaction (CSAT) Campaign Builder** web application built with **React** and **Tailwind CSS**. It allows users to dynamically configure CSAT campaign popups via **Content** and **Styling** control panels while instantly viewing real-time updates inside an interactive mobile preview container.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Project Links
 
-## React Compiler
+* **GitHub Repository:** [https://github.com/24-amit/CSAT-Campaign-Builder.git](https://github.com/24-amit/CSAT-Campaign-Builder.git)
+* **Live Deployment (Render):** [https://csat-campaign-builder.onrender.com/](https://csat-campaign-builder.onrender.com/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features & Requirements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🎯 1. Real-Time Mobile Preview
+* **Instant State Synchronization:** All changes made in the configuration controls update the live mobile preview instantly with zero latency—no save buttons or page refreshes required.
+* **Multi-Step Flow:** Toggle seamlessly between **Initial**, **Feedback**, and **Thank You** screen states.
+
+### 📝 2. Content Builder
+* **Initial Page:** Custom Title and Subtitle inputs.
+* **Feedback Page:**
+  * Rating style selection (**Stars 1–5** or **Numbers 1–5**).
+  * Dynamic option list management (add/remove options in real time).
+  * Toggle switch for an optional feedback comment textarea.
+  * Customizable submit button text.
+* **Thank You Page:**
+  * Media upload support via image URL (supports PNG, JPG, JPEG, GIF, Lottie).
+  * Custom Title, Subtitle, and action button text.
+
+### 🎨 3. Styling Builder
+* **Color Palette Customization:** Fine-tune background color, title color, subtitle color, button background color, button text color, and selected/unselected rating colors.
+* **Layout & Typography Controls:** Interactive sliders to adjust base font size, border radius, button width (percentage), and button height (pixels).
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend Framework:** React.js (v19)
+* **Build Tool:** Vite
+* **Styling:** Tailwind CSS (v4) & PostCSS
+* **Code Linting:** ESLint & Oxlint
+* **Deployment:** Render
+
+---
+
+## 📂 Project Structure
+
+```text
+csat-builder/
+├── node_modules/
+├── public/
+│   ├── favicon.svg
+│   └── icons.svg
+├── src/
+│   ├── assets/
+│   │   ├── hero.png
+│   │   ├── react.svg
+│   │   └── vite.svg
+│   ├── App.css
+│   ├── App.jsx            # Core Builder & Mobile Preview Component
+│   ├── index.css          # Global Styles & Tailwind CSS Directives
+│   └── main.jsx           # React Entry Point
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md              # Project Documentation
+└── vite.config.js         # Vite & Tailwind Configuration
+```
+
+---
+
+## 💻 Local Setup & Installation
+
+Follow these steps to run the project locally on your machine:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/24-amit/CSAT-Campaign-Builder.git
+   cd CSAT-Campaign-Builder
